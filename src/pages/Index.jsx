@@ -29,7 +29,7 @@ const Index = () => {
                 Upload Image 1
               </Button>
             </label>
-            {imageOne && <Image src={imageOne} alt="Uploaded Image 1" boxSize="200px" mt={4} />}
+            {imageOne && <Image src={imageOne} alt="Uploaded Image 1" boxSize="200px" mt={4} style={{ filter: "grayscale(100%)" }} />}
           </Box>
           <Box textAlign="center">
             <Input type="file" accept="image/*" onChange={(e) => handleImageChange(e, setImageTwo)} p={1} display="none" id="file-upload-two" />
@@ -38,7 +38,7 @@ const Index = () => {
                 Upload Image 2
               </Button>
             </label>
-            {imageTwo && <Image src={imageTwo} alt="Uploaded Image 2" boxSize="200px" mt={4} />}
+            {imageTwo && <Image src={imageTwo} alt="Uploaded Image 2" boxSize="200px" mt={4} style={{ filter: "grayscale(100%)" }} />}
           </Box>
         </Flex>
       </VStack>
